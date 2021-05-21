@@ -1,4 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
 h3{
     color: mediumslateblue;
     background-color: mediumvioletred;
+}
+footer{
+    background-color: gray;
+}
+a{
+    background-color: tomato;
+    color: red;
+    text-decoration: none;/*quitar el subrayado*/
+    /*padding-top: 10px;/*margen interno arriba*/
+    /* padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px; */
+    /*padding: 10px;/*margin interno para todos los lados*/
+    padding: 10px 15px;/*margen interno(arriba y abajo)(los lados)*/
+    /* padding: 10px 5px 8px 2px; */
+
+}
+/*pseudoclase: hover, visited, active*/
+a:hover{
+    background-color: #000;
+    color: tomato;
+}
+a:active{
+    background-color: turquoise;
+}
+/* a:visited{
+    background-color: yellow;
+} */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /*modificar fuentes seguras*/
+    font-size: 20px;
+}
+h1{
+    font-family: 'Mountains of Christmas', cursive;
+    /*fuente de fantasia*/
+    font-size: 3em;/*1em = medida base 16px*/
 }
