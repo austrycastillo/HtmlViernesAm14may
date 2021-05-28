@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
     <header>
         <h1>Contacto</h1>
@@ -17,5 +19,65 @@
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
+    <main>
+        <h2>Formulario de contacto</h2>
+        <!--
+            métodos de envío: 
+                get: a través de la url
+                post: ocultos
+        -->
+        <form action="enviar.php" method="post" enctype="multipart/form-data">
+            <label for="nombre">Nombre: </label><br>
+            <input type="text" id="nombre" placeholder="Ej. Juan" size="50" maxlength="10" name="nombre" required style="width: 40%;height: 35px;background-color: rgb(216, 126, 126,0.3);">
+            <br>
+
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="email" id="correo" placeholder="Ej. nombre@correo.com" maxlength="20" name="correo" required style="width: 40%;height: 35px;">
+            <br>
+
+            <label for="edad">Edad:</label><br>
+            <input type="number" id="edad" name="edad" min="5" max="10" style="width: 40%;height: 35px;">
+            <br>
+
+            <label for="clave">Contraseña:</label><br>
+            <input type="password" id="clave" minlength="2" style="width: 40%;height: 35px;">
+            <br>
+
+            <label for="sexo">Sexo:</label>
+            <input type="radio" name="sexo" value="femenino" id="sexo"> femenino
+            <input type="radio" name="sexo" value="masculino" checked id="sexo"> masculino
+            <br>
+
+            <label for="dia">días de consulta:</label><br>
+            <input type="checkbox" name="diaLunes" id="dia">lunes
+            <input type="checkbox" name="diaMartes" id="dia" checked>martes
+            <input type="checkbox" name="diaMiercoles" id="dia">miércoles
+            <input type="checkbox" name="diaJueves" id="dia">jueves
+            <input type="checkbox" name="diaViernes" id="dia">viernes
+            <br>
+            
+            <input type="date">
+            <input type="file">
+            
+            <br>
+            <label for="horario">Horarios disponibles: </label><br>
+            <select name="horario" id="horario" style="width: 40%;height: 35px;">
+                <option value="mañana">9 a 12 horas</option>
+                <option>14 a 16 horas</option>
+                <option>18 a 22 horas</option>
+            </select>
+            <br>
+
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea name="comentarios" id="comentarios" cols="50" rows="5" style="width: 40%;height: 70px;"></textarea>
+
+            <br><br>
+            <input type="submit" value="Enviar información" style="width: 40%;height: 35px; background-color: green;color: honeydew;text-transform: uppercase;font-weight: bold;">
+            <!-- <input type="button" value="enviar">
+            <button>enviar tercer botón</button>
+            <input type="reset"> -->
+        </form>
+    </main>
 </body>
+
 </html>
